@@ -1,0 +1,37 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+</head>
+<script>
+function oa_tool(){
+	if(window.parent.mainDefine.cols=="0,10,*"){
+		frameshow.src="p_1.gif";
+		oa_tree.title="隐藏工具栏"
+		window.parent.mainDefine.cols="280,10,*";
+	}
+	else{
+		frameshow.src="p_2.gif";
+		oa_tree.title="显示工具栏"
+		window.parent.mainDefine.cols="0,10,*";
+	}
+}
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(../Abg.gif);
+}
+-->
+</style>
+<body text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<table width="9" border="0" height="100%" cellpadding="0" cellspacing="0" align="left">
+  <tr align="center"> 
+    <td width=10 style="cursor: hand;"> 
+      <div id=oa_tree onclick="oa_tool();" title=隐藏工具栏><br>
+        <img id=frameshow src="p_1.gif"></div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
